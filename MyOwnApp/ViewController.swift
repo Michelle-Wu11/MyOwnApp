@@ -7,6 +7,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var monthTextField: UITextField!
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var yearTextField: UITextField!
+
     
     
     override func viewDidLoad() {
@@ -23,5 +24,10 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
 
+    @IBAction func resetButton(sender: AnyObject) {
+        monthTextField.text = ""
+        yearTextField.text = ""
+        dateTextField.text = ""
+    }
 }
 
